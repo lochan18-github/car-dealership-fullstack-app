@@ -1,64 +1,31 @@
-import React, { useState } from "react";
+<input
+  type="text"
+  name="username"
+  placeholder="Enter Username"
+/>
 
-function Register() {
-  const [formData, setFormData] = useState({
-    username: "",
-    firstName: "",
-    lastName: "",
-    email: "",
-    password: ""
-  });
+<input
+  type="text"
+  name="first_name"
+  placeholder="Enter First Name"
+/>
 
-  const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
-  };
+<input
+  type="text"
+  name="last_name"
+  placeholder="Enter Last Name"
+/>
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log("User Registered:", formData);
-  };
+<input
+  type="email"
+  name="email"
+  placeholder="Enter Email"
+/>
 
-  return (
-    <div style={{ padding: "20px" }}>
-      <h2>Sign Up</h2>
+<input
+  type="password"
+  name="password"
+  placeholder="Enter Password"
+/>
 
-      <form onSubmit={handleSubmit}>
-
-        <div>
-          <label>Username:</label><br />
-          <input type="text" name="username" value={formData.username} onChange={handleChange} required />
-        </div>
-
-        <div>
-          <label>First Name:</label><br />
-          <input type="text" name="firstName" value={formData.firstName} onChange={handleChange} required />
-        </div>
-
-        <div>
-          <label>Last Name:</label><br />
-          <input type="text" name="lastName" value={formData.lastName} onChange={handleChange} required />
-        </div>
-
-        <div>
-          <label>Email:</label><br />
-          <input type="email" name="email" value={formData.email} onChange={handleChange} required />
-        </div>
-
-        <div>
-          <label>Password:</label><br />
-          <input type="password" name="password" value={formData.password} onChange={handleChange} required />
-        </div>
-
-        <br />
-
-        <button type="submit">Register</button>
-
-      </form>
-    </div>
-  );
-}
-
-export default Register;
+<button type="submit">Register</button>
