@@ -54,3 +54,40 @@ color: white;
 text-align: center;
 padding: 10px;
 }
+
+
+nav {
+    background-color: #222;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a.active {
+    color: yellow;
+    font-weight: bold;
+}
+
+.contact-container {
+    display: flex;
+    gap: 40px;
+    padding: 20px;
+}
+
+.member {
+    margin-bottom: 20px;
+}
+
+.member img {
+    width: 120px;
+    border-radius: 10px;
+}
